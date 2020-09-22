@@ -1,0 +1,40 @@
+doctype html
+html
+   head
+      title = "Calculator!"
+      style.
+          body {
+              font-family: Verdana;
+              font-size: 17px;
+              background: #C270F5;
+              text-align:center;
+          }
+   body
+     h1 Calculator!
+     form(method='post' action='/database')
+            br
+            div
+              h3 Operator
+              label
+                input(type='radio' value='1' name='operator[1][]')
+                | Addition
+              label
+                input(type='radio' value='2' name='operator[1][]')
+                | Subtraction
+              label
+                input(type='radio' value='3' name='operator[1][]')
+                | Multiplication
+              label
+                input(type='radio' value='4' name='operator[1][]')
+                | Devision
+            br
+            br
+            input(type='text' name='firstnum' placeholder='Enter Your First Number' required='')
+            br
+            br
+            input(type='text' name='secondnum' placeholder='Enter Your Second Number' required='')
+
+
+
+     a(href='/') Go Back Home!
+     h3 By Christopher Rogers
